@@ -2,6 +2,20 @@
 
 An example app built with NextJS that can be setup and deployed to production in seconds on Vercel. 
 
+All the glory goes back to https://github.com/t-kelly/nextjs-shopify-app where I forked the project.
+
+The original repo is no more maintained and is not up-to-date with both shopify api and shopify node api changes.
+
+The app template in this repo is up-to-date, maintained, tested and working! Enjoy!
+
+## Why use this app template instead of the Shopify CLI official one?
+
+- Shopify CLI is generating an app that does not work out of the box. 
+- App generated with shopify CLI is using old version of shopify node API and old version of all kind of dependencies (it still uses the koa-shopify-node-api dependency which is full of bug and being abandoned. Honest advice: stay away from this lib)
+- App generated with shopify CLI is using NextJS custom server which means that you can not publish to Vercel. You can publish to Heroku only. More over why using custom server when we can avoid it?
+- App generated with shopify CLI is extremely slow (due to ngrok and NextJS custom server, server side changes using the shopify official app take ages to reflect). Development experience is awful. While development speed using this app template is acceptable. Once the app is loaded, changes in both server side and client side are fast. 
+- This app template uses the latest dependencies version and work out of the box :muscle: :sunglasses:
+
 ## Deploy your own
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Ft-kelly%2Fnextjs-shopify-app&env=NEXT_PUBLIC_SHOPIFY_APP_API_KEY,SHOPIFY_APP_API_SECRET_KEY&project-name=shopify-nextjs-app&repo-name=shopify-nextjs-app&integration-ids=oac_V3R1GIpkoJorr6fqyiwdhl17)

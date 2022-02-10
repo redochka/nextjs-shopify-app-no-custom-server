@@ -9,6 +9,7 @@ export default function SessionProvider({children}) {
     const session = await getSessionToken(app);
 
     if (!session) {
+      console.log("Can not get session using getSessionToken. Going to redirect to auth page");
       window.location.pathname = `/api/auth/shopify/login`;
     }
   }, []);

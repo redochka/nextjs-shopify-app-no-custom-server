@@ -14,11 +14,10 @@ export default function EmbeddedApp({children}) {
     const url = new URL(window.location.href)
     const host = url.searchParams.get('host');
 
-    // If host is not set, than the page is being loaded outside of App Bridge
-    // so we should proceed with starting OAuth
     if (host) {
       setHost(host)
     } else {
+      console.log("Host is not set, than the page is being loaded outside of App Bridge, so we are going to proceed with starting OAuth");
       window.location.pathname = `/api/auth/shopify/login`;
     }
   }, [])

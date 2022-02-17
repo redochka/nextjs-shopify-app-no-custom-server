@@ -51,6 +51,13 @@
     "@apollo/react-hooks" "^3.1.5"
     tslib "^1.10.0"
 
+"@babel/runtime@^7.15.4":
+  version "7.17.2"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.17.2.tgz#66f68591605e59da47523c631416b18508779941"
+  integrity sha512-hzeyJyMA1YGdJTuWU0e/j4wKXrU4OMFvY2MSlaI9B7VQb0r5cxTE3EAIS2Q7Tn2RIcDkRvTA/v2JsAEhxe99uw==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/runtime@^7.5.5", "@babel/runtime@^7.8.7":
   version "7.15.3"
   resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.15.3.tgz"
@@ -118,29 +125,29 @@
   resolved "https://registry.yarnpkg.com/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-12.0.10.tgz#5c0ba98b695c4be44d8793aff42971a0dac65c2d"
   integrity sha512-oUIWRKd24jFLRWUYO1CZmML5+32BcpVfqhimGaaZIXcOkfQW+iqiAzdqsv688zaGtyKGeB9ZtiK3NDf+Q0v+Vw==
 
-"@shopify/admin-graphql-api-utilities@^1.0.5":
+"@shopify/admin-graphql-api-utilities@^1.0.7":
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/@shopify/admin-graphql-api-utilities/-/admin-graphql-api-utilities-1.0.7.tgz#d82ff8e15d3ef01f7c52cc343be84b9338bcc728"
   integrity sha512-frwfFyKA7B6V29SowVoq1AEQQ3/RwKuK9bNca9mM8MqiJ+1hScAfhm7ySdeQx/bJJhMHXgjbg7AaPX7hgthKfg==
 
-"@shopify/app-bridge-react@^2.0.5":
-  version "2.0.7"
-  resolved "https://registry.yarnpkg.com/@shopify/app-bridge-react/-/app-bridge-react-2.0.7.tgz#11fd2f27d4bc11fffdd8865283986a5013bcbc2a"
-  integrity sha512-mxVUHxXw+nVqK1ElwWXpZrFSqPdbqDaFw/+0YXiJfDyGUkbaooGoFVJh9XqlBgJlppVLthFyiWCwwMfkls7UHQ==
+"@shopify/app-bridge-react@^2.0.10":
+  version "2.0.10"
+  resolved "https://registry.yarnpkg.com/@shopify/app-bridge-react/-/app-bridge-react-2.0.10.tgz#55d152b463185c85dab06c2a41ff373533dcc2a8"
+  integrity sha512-C7i10BexyFvH9sMhjdao3DOVOEsH2/aK/fEFQjjdq7xcSQfCE4KNWPzOEeH1FdHe8T1QIAK/XQfiR82jwDIfxw==
   dependencies:
-    "@shopify/app-bridge" "^2.0.7"
+    "@shopify/app-bridge" "^2.0.10"
 
-"@shopify/app-bridge-utils@^2.0.5":
-  version "2.0.7"
-  resolved "https://registry.yarnpkg.com/@shopify/app-bridge-utils/-/app-bridge-utils-2.0.7.tgz#8bdb8fb3745bf0efe246e7d11d726ebf2244565f"
-  integrity sha512-r06PeOlYUZ5JeWvW+rKJxmRCSg8G8G/HN053p7O1xQ+z+UyowGW2MKMPFtySYx7wow2AkgsiOBN2/Bdz1uBJJg==
+"@shopify/app-bridge-utils@^2.0.10":
+  version "2.0.10"
+  resolved "https://registry.yarnpkg.com/@shopify/app-bridge-utils/-/app-bridge-utils-2.0.10.tgz#20abc06d4b69b438548a087bf96a3a920d538104"
+  integrity sha512-VxzJHOUteLhA7kmi7PSrbTXo8AC+Y1yOYXDjc5/yspT8prHEi3ZZu7xf/ERHx0ArW4vFGKkaAcdVwOj/S16X8A==
   dependencies:
-    "@shopify/app-bridge" "^2.0.7"
+    "@shopify/app-bridge" "^2.0.10"
 
-"@shopify/app-bridge@^2.0.5", "@shopify/app-bridge@^2.0.7":
-  version "2.0.7"
-  resolved "https://registry.yarnpkg.com/@shopify/app-bridge/-/app-bridge-2.0.7.tgz#68382cfd865af6f9466342365a1822381cfa863f"
-  integrity sha512-/1JHlL1rGOXQkYMGJo6WkvbGfu4JYCNlrHFWD05WuFTdrNstjV+mhS1BF1+tZiQG/2Dn+i0EICkSXFQicVpkiQ==
+"@shopify/app-bridge@^2.0.10":
+  version "2.0.10"
+  resolved "https://registry.yarnpkg.com/@shopify/app-bridge/-/app-bridge-2.0.10.tgz#5bdf431696196d57a694866a15711c7bbb71591c"
+  integrity sha512-vAoRElRw2nnGzDt2Pk3EWP0Mzp5Y+89Ewd/imdnAZv/505R5hfFjTd4OYFyYbE0n0rpSXuddWQTbZnhmfpnHAQ==
   dependencies:
     base64url "^3.0.1"
 
@@ -149,26 +156,17 @@
   resolved "https://registry.npmjs.org/@shopify/network/-/network-1.6.4.tgz"
   integrity sha512-V+//Et386LnYdtNhQ3e33AKYfU25XEt8H5XYeMqPvJZpVvC9Z1lHKQMpmM/zq13VXjPUjt9/sNxHxMP3I6cbJg==
 
-"@shopify/polaris-icons@^4.11.0":
-  version "4.16.0"
-  resolved "https://registry.yarnpkg.com/@shopify/polaris-icons/-/polaris-icons-4.16.0.tgz#0844ce688275f934dea41729892c60fda68a8264"
-  integrity sha512-0moXN6NYcwjpja874VmH0pliUdsYMIbdxm/OX3opGTrMKAKG4lCp83P0zO1hXbQxM7pQTwqHmVX39tFRqN11Ew==
+"@shopify/polaris-icons@^4.17.0":
+  version "4.17.0"
+  resolved "https://registry.yarnpkg.com/@shopify/polaris-icons/-/polaris-icons-4.17.0.tgz#6658154b0dfcc6ce9427095cb0a3423cf266d1de"
+  integrity sha512-Vd6APDtyrCV+RkexqlzJ62iY3pInilGiClknpeK8wBq1suAZBa9A9g7WA0JM0RrjPHCGpG+W7Rb8iJitYYfOuQ==
 
-"@shopify/polaris-tokens@^3.0.0":
-  version "3.1.0"
-  resolved "https://registry.npmjs.org/@shopify/polaris-tokens/-/polaris-tokens-3.1.0.tgz"
-  integrity sha512-SQPNtoevLxD3y1/nhXkthzhEyWAdi1+muxBn/DCHir1/+R/+1v/hkXDLG5o2X3jxqpnxd1R/rJVh9fMKmfWTyw==
+"@shopify/polaris@^9.0.0":
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/@shopify/polaris/-/polaris-9.0.0.tgz#181b002d142e11cbacb36d4bba3b416b2c149de1"
+  integrity sha512-3hwlezHx2jJDvdsrQh5q2dK//p199LzftxyDomWb6+HyYU+Tp/GxZnC42kB/kfS4lQyGa0/zP8HQDnBc732NCw==
   dependencies:
-    hsluv "^0.1.0"
-    tslib "^1.14.1"
-
-"@shopify/polaris@^7.6.0":
-  version "7.6.0"
-  resolved "https://registry.yarnpkg.com/@shopify/polaris/-/polaris-7.6.0.tgz#9288a03cc377060c4462c2f140800f0270b8c0ef"
-  integrity sha512-/T/EqLJZdvbYw1sFhLJIl3E6apijKGL17x16AzceVyosb8KAq6onkj6IOGhjy771RYgOtPT53kV9C8Kd7VGXuA==
-  dependencies:
-    "@shopify/polaris-icons" "^4.11.0"
-    "@shopify/polaris-tokens" "^3.0.0"
+    "@shopify/polaris-icons" "^4.17.0"
     "@types/react" "^17.0.19"
     "@types/react-dom" "^17.0.9"
     "@types/react-transition-group" "^4.4.2"
@@ -176,7 +174,7 @@
     lodash "^4.17.4"
     react-transition-group "^4.4.2"
 
-"@shopify/shopify-api@^2.0.0":
+"@shopify/shopify-api@^2.1.0":
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/@shopify/shopify-api/-/shopify-api-2.1.0.tgz#750519188cf4cad8c65170ed05e4bd4aa65a5285"
   integrity sha512-CI+CUc0b2+Iv4AFhKaIAvMpbTddyTIKM3O2Qk0wS1gcj5nRdSFg6JbeVThNOYYu/7rzf93J8qYF1E4OZl920CQ==
@@ -195,6 +193,13 @@
   version "2.1.2"
   resolved "https://registry.npmjs.org/@types/cookiejar/-/cookiejar-2.1.2.tgz"
   integrity sha512-t73xJJrvdTjXrn4jLS9VSGRbz0nUY3cl2DMGDU48lKl+HR9dbbjW2A9r3g40VA++mQpy6uuHg33gy7du2BKpog==
+
+"@types/ioredis@^4.28.8":
+  version "4.28.8"
+  resolved "https://registry.yarnpkg.com/@types/ioredis/-/ioredis-4.28.8.tgz#a181d6eb70e402a6db670fe54b9c5bb66c0fac17"
+  integrity sha512-mULOyO2smtvkE1zmzRRA4P0+1UjEqusi014kXOL1q3CY0RgqkR5/wKvv+vAJbPw2Q66wPyylKeevUy+m/FaRMg==
+  dependencies:
+    "@types/node" "*"
 
 "@types/jsonwebtoken@^8.5.0":
   version "8.5.1"
@@ -393,12 +398,20 @@ asynckit@^0.4.0:
   resolved "https://registry.npmjs.org/asynckit/-/asynckit-0.4.0.tgz"
   integrity sha1-x57Zf380y48robyXkLzDZkdLS3k=
 
-axios@^0.25.0:
-  version "0.25.0"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.25.0.tgz#349cfbb31331a9b4453190791760a8d35b093e0a"
-  integrity sha512-cD8FOb0tRH3uuEe6+evtAbgJtfxr7ly3fQjYcMcuPlgkwVS9xboaVIpcDV+cYQe+yGykgwZCs1pzjntcGa6l5g==
+axios-retry@^3.2.4:
+  version "3.2.4"
+  resolved "https://registry.yarnpkg.com/axios-retry/-/axios-retry-3.2.4.tgz#f447a53c3456f5bfeca18f20c3a3272207d082ae"
+  integrity sha512-Co3UXiv4npi6lM963mfnuH90/YFLKWWDmoBYfxkHT5xtkSSWNqK9zdG3fw5/CP/dsoKB5aMMJCsgab+tp1OxLQ==
   dependencies:
-    follow-redirects "^1.14.7"
+    "@babel/runtime" "^7.15.4"
+    is-retry-allowed "^2.2.0"
+
+axios@^0.26.0:
+  version "0.26.0"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.26.0.tgz#9a318f1c69ec108f8cd5f3c3d390366635e13928"
+  integrity sha512-lKoGLMYtHvFrPVt3r+RBMp9nh34N0M8zEfCWqdWZx6phynIEhQqAdydpyBAAG211zlhX9Rgu08cOamy6XjE5Og==
+  dependencies:
+    follow-redirects "^1.14.8"
 
 base64url@^3.0.1:
   version "3.0.1"
@@ -487,10 +500,10 @@ focus-visible@^5.2.0:
   resolved "https://registry.npmjs.org/focus-visible/-/focus-visible-5.2.0.tgz"
   integrity sha512-Rwix9pBtC1Nuy5wysTmKy+UjbDJpIfg8eHjw0rjZ1mX4GNLz1Bmd16uDpI3Gk1i70Fgcs8Csg2lPm8HULFg9DQ==
 
-follow-redirects@^1.14.7:
-  version "1.14.7"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.7.tgz#2004c02eb9436eee9a21446a6477debf17e81685"
-  integrity sha512-+hbxoLbFMbRKDwohX8GkTataGqO6Jb7jGwpAlwgy2bIz25XtRm7KEzJM76R1WiNT5SwZkX4Y75SwBolkpmE7iQ==
+follow-redirects@^1.14.8:
+  version "1.14.8"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.8.tgz#016996fb9a11a100566398b1c6839337d7bfa8fc"
+  integrity sha512-1x0S9UVJHsQprFcEC/qnNzBLcIxsjAV905f/UkQxbclCsoTWlacCNOpQa/anodLl2uaEKFhfWOvM2Qg77+15zA==
 
 form-data@^3.0.0:
   version "3.0.1"
@@ -508,7 +521,7 @@ graphql-tag@^2.4.2:
   dependencies:
     tslib "^2.1.0"
 
-graphql@^16.2.0:
+graphql@^16.3.0:
   version "16.3.0"
   resolved "https://registry.yarnpkg.com/graphql/-/graphql-16.3.0.tgz#a91e24d10babf9e60c706919bb182b53ccdffc05"
   integrity sha512-xm+ANmA16BzCT5pLjuXySbQVFwH3oJctUVdy81w1sV0vBU0KgDdBGtxQOUd5zqOBk/JayAFeG8Dlmeq74rjm/A==
@@ -520,15 +533,10 @@ hoist-non-react-statics@^3.3.0:
   dependencies:
     react-is "^16.7.0"
 
-hsluv@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.npmjs.org/hsluv/-/hsluv-0.1.0.tgz"
-  integrity sha512-ERcanKLAszD2XN3Vh5r5Szkrv9q0oSTudmP0rkiKAGM/3NMc9FLmMZBB7TSqTaXJfSDBOreYTfjezCOYbRKqlw==
-
-ioredis@^4.28.3:
-  version "4.28.4"
-  resolved "https://registry.yarnpkg.com/ioredis/-/ioredis-4.28.4.tgz#de62dee96159a97b37f75d91318f2c6dbfe63c15"
-  integrity sha512-KmG3FDd1pKZcWQ7/fIbwzvpkZ50NwRJ3RBK9dpetJrNfC+sxhK6TzaVkExvh9AiF+rAVSUmvqfHyQp5U418aDw==
+ioredis@^4.28.5:
+  version "4.28.5"
+  resolved "https://registry.yarnpkg.com/ioredis/-/ioredis-4.28.5.tgz#5c149e6a8d76a7f8fa8a504ffc85b7d5b6797f9f"
+  integrity sha512-3GYo0GJtLqgNXj4YhrisLaNNvWSNwSS2wS4OELGfGxH8I69+XfNdnmV1AyN+ZqMh0i7eX+SWjrwFKDBDgfBC1A==
   dependencies:
     cluster-key-slot "^1.1.0"
     debug "^4.3.1"
@@ -541,6 +549,11 @@ ioredis@^4.28.3:
     redis-errors "^1.2.0"
     redis-parser "^3.0.0"
     standard-as-callback "^2.1.0"
+
+is-retry-allowed@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/is-retry-allowed/-/is-retry-allowed-2.2.0.tgz#88f34cbd236e043e71b6932d09b0c65fb7b4d71d"
+  integrity sha512-XVm7LOeLpTW4jV19QSH38vkswxoLud8sQ57YwJVTPWdiaI9I8keEhGFpBlslyVsgdQy4Opg8QOLb8YRgsyZiQg==
 
 "js-tokens@^3.0.0 || ^4.0.0":
   version "4.0.0"
@@ -854,7 +867,7 @@ ts-invariant@^0.4.0, ts-invariant@^0.4.4:
   dependencies:
     tslib "^1.9.3"
 
-tslib@^1.10.0, tslib@^1.14.1, tslib@^1.9.3:
+tslib@^1.10.0, tslib@^1.9.3:
   version "1.14.1"
   resolved "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==

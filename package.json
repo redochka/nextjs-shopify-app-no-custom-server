@@ -1,6 +1,6 @@
 {
-  "name": "nextjs",
-  "version": "0.1.0",
+  "name": "nextjs-shopify-app-no-custom-server",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -15,14 +15,26 @@
     "@shopify/app-bridge-utils": "^2.0.5",
     "@shopify/polaris": "^7.6.0",
     "@shopify/shopify-api": "^2.0.0",
+    "@shopify/admin-graphql-api-utilities": "^1.0.7",
+    "@shopify/app-bridge": "^2.0.10",
+    "@shopify/app-bridge-react": "^2.0.10",
+    "@shopify/app-bridge-utils": "^2.0.10",
+    "@shopify/polaris": "^9.0.0",
+    "@shopify/shopify-api": "^2.1.0",
     "apollo-boost": "^0.4.9",
     "axios": "^0.25.0",
+    "axios": "^0.26.0",
+    "axios-retry": "^3.2.4",
     "graphql": "^16.2.0",
     "ioredis": "^4.28.3",
+    "graphql": "^16.3.0",
+    "ioredis": "^4.28.5",
     "next": "12.x",
     "react": "17.x",
     "react-apollo": "^3.1.5",
     "react-dom": "17.x"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@types/ioredis": "^4.28.8"
+  }
 }

@@ -8,7 +8,7 @@ import ErrorBoundary from "@components/ErrorBoundary";
 
 export default function EmbeddedApp({children}) {
   const API_KEY = process.env.NEXT_PUBLIC_SHOPIFY_APP_API_KEY;
-  const [host, setHost] = useState();
+  const [host, setHost] = useState("");
 
   useEffect(() => {
     const url = new URL(window.location.href)
@@ -17,7 +17,7 @@ export default function EmbeddedApp({children}) {
     if (host) {
       setHost(host)
     } else {
-      console.log("Host is not set, than the page is being loaded outside of App Bridge, so we are going to proceed with starting OAuth");
+      console.log("Shopify always provide Host in the url. If not present, then the page is loaded outside of App Bridge #hack. Proceed with OAuth");
       window.location.pathname = `/api/auth/shopify/login`;
     }
   }, [])

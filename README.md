@@ -32,13 +32,29 @@ Finally, install your app on a development store by selecting **Test on developm
 
 1. Clone your app's repo `git clone https://github.com/[your-user-name]/nextjs-shopify-app.git`
 2. Create another Shopify App for Development inside the [Partner Dashboard](https://partners.shopify.com/current/stores?shpxid=a1fb8161-E1A9-475F-5DF6-E0BCC9D15DFF) and use the Shopify API Key and API secret key for local development.
-4. Rename `.env.example` to `.env.local` and fill in values
-5. Run `npm install` and then `npm run dev`
-6. [Expose your dev environment](https://ngrok.com/docs#getting-started-expose) with ngrok (nextjs runs on port 3000 by default)
-7. Update your Dev Apps settings in the Partner Dashboard with the following URLs:
+3. Rename `.env.example` to `.env.local` and fill in values
+4. Run `npm install` and then `npm run dev`
+5. [Expose your dev environment](https://ngrok.com/docs#getting-started-expose) with ngrok (nextjs runs on port 3000 by default). I use:
+```
+ngrok http 3000 -region eu
+
+#
+# use the region near to you to speed up things when developping.
+#
+ngrok by @inconshreveable                                                                                                                                                    (Ctrl+C to quit)
+                                                                                                                                                                                             
+Session Status                online                                                                                                                                                         
+Account                       r********@gmail.com (Plan: Free)                                                                                                                               
+Version                       2.3.40                                                                                                                                                         
+Region                        Europe (eu)                                                                                                                                                    
+Web Interface                 http://127.0.0.1:4040                                                                                                                                          
+Forwarding                    http://yourNgrokTunnel.ngrok.io -> http://localhost:3000                                                                                                 
+Forwarding                    https://yourNgrokTunnel.ngrok.io -> http://localhost:3000                                                                                                 
+```
+6. Update your Dev Apps settings in the Partner Dashboard with the following URLs:
    - Instead of using `https://yourNgrokTunnel.ngrok.io/` for the App URL, use `https://yourNgrokTunnel.ngrok.io/embedded`
    - Instead of using `https://yourNgrokTunnel.ngrok.io/auth/callback` for the Redirection URLs, use `https://yourNgrokTunnel.ngrok.io/api/auth/shopify/callback`
-8. [Install your app on a development store and start developing!](https://shopify.dev/tutorials/build-a-shopify-app-with-node-and-react/embed-your-app-in-shopify#authenticate-and-test) 
+7. [Install your app on a development store and start developing!](https://shopify.dev/tutorials/build-a-shopify-app-with-node-and-react/embed-your-app-in-shopify#authenticate-and-test) 
 
 You can start editing the page by modifying `pages/embedded/index.js`. The page auto-updates as you edit the file.
 
@@ -57,7 +73,8 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-## Support me
+## Support the project
 
-- Bitcoin: 3Hi2ZYHTmFnH2pL6CCnif8ZMMt5RmizMRk
-- PayPal: https://paypal.me/redochka
+- Improve the code base, answer issues and do pull requests
+- Support by Bitcoin: 3Hi2ZYHTmFnH2pL6CCnif8ZMMt5RmizMRk
+- Support by PayPal: https://paypal.me/redochka

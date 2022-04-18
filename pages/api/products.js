@@ -6,7 +6,7 @@ export default async (req, res) => {
   // what domain your app is being hosted on
   Shopify.Context.update({ HOST_NAME: req.headers.host});
 
-  const session = await Shopify.Utils.loadCurrentSession(req, res);
+  const session = await Shopify.Utils.loadCurrentSession(req, res, false);
   const client = new Shopify.Clients.Graphql(session.shop, session.accessToken);
   // Use `client.get` to request the specified Shopify GraphQL API endpoint, in this case `products`.
   const products = await client.query({

@@ -1,6 +1,6 @@
 import Shopify, {context} from '@lib/shopify'
 
-export default async (req, res) => {
+export default getProducts = async (req, res) => {
   // Provide HOST_NAME here just in case it was not provided by env variable
   // This might occur during the first deploy to Vercel when you don't yet know
   // what domain your app is being hosted on

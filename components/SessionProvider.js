@@ -1,5 +1,6 @@
 import {useEffect} from 'react';
 import axios from "axios";
+import { getSessionToken } from '@shopify/app-bridge-utils';
 
 export default function SessionProvider({children}) {
   //const app = useAppBridge();
@@ -31,14 +32,14 @@ export default function SessionProvider({children}) {
     //
     // getSessionToken listens to event, so if no event, this function will not resolve
     // call getSessionToken when we are sure that the app is already installed
-    /*
-       console.log("Going to call getSessionToken");
-       getSessionToken(app).then((value) => {
-         console.log("inside promise, session is: ", value);
-       }).catch(reason => {
-         console.log("inside promise catch, reason is: ", reason);
-       })
-    */
+    
+      //  console.log("Going to call getSessionToken");
+      //  getSessionToken(app).then((value) => {
+      //    console.log("inside promise, session is: ", value);
+      //  }).catch(reason => {
+      //    console.log("inside promise catch, reason is: ", reason);
+      //  })
+    
 
 
   }, []);

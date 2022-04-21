@@ -16,7 +16,7 @@ const RoutePropagator = () => {
     appBridge.subscribe(Redirect.Action.APP, (payload) => {
       Router.push(payload.path);
     });
-  }, []);
+  }, [appBridge]);
 
   return appBridge && route ? (
     <ShopifyRoutePropagator location={route} app={appBridge} />

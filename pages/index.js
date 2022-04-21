@@ -15,7 +15,7 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          Read <a href="https://github.com/t-kelly/nextjs-shopify-app">the repo's README.md</a> for instructions to get started
+          Read <a href="https://github.com/t-kelly/nextjs-shopify-app">the repo&apos;s README.md</a> for instructions to get started
         </p>
 
         <div className={styles.grid}>

@@ -1,16 +1,17 @@
-import ApolloClient from "apollo-boost";
-import { ApolloProvider as Provider } from "react-apollo";
-import { fetch } from '@lib/app-bridge';
+import { ApolloClient, InMemoryCache } from "@apollo/client";
+import { ApolloProvider as Provider } from "@apollo/client";
+import { fetch } from "@lib/app-bridge";
 import { useAppBridge } from "@shopify/app-bridge-react";
 
-export default function ApolloProvider({children}) {
+export default function ApolloProvider({ children }) {
   const app = useAppBridge();
   const client = new ApolloClient({
+    cache: new InMemoryCache(),
     fetch: fetch(app),
     fetchOptions: {
       credentials: "include",
     },
   });
 
-  return <Provider client={client}>{children}</Provider>
+  return <Provider client={client}>{children}</Provider>;
 }

@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "lint": "next lint --fix",
     "dev": "next dev",
     "debug": "NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "prepare": "husky install",
+    "pre-commit": "next lint"
   },
   "dependencies": {
     "@apollo/client": "^3.7.1",
@@ -25,6 +28,9 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "eslint": "8.26.0",
+    "eslint-config-next": "13.0.2",
+    "husky": "^8.0.1",
     "@types/ioredis": "^4.28.10"
   }
 }

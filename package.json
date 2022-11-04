@@ -3,38 +3,34 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "lint": "next lint --fix",
     "dev": "next dev",
+    "tunnel": "cloudflared tunnel --config .cloudflared/config.yml run",
     "debug": "NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "prepare": "husky install",
+    "pre-commit": "next lint"
   },
   "dependencies": {
-    "@shopify/admin-graphql-api-utilities": "^1.0.5",
-    "@shopify/app-bridge": "^2.0.5",
-    "@shopify/app-bridge-react": "^2.0.5",
-    "@shopify/app-bridge-utils": "^2.0.5",
-    "@shopify/polaris": "^7.6.0",
-    "@shopify/shopify-api": "^2.0.0",
-    "@shopify/admin-graphql-api-utilities": "^1.0.7",
-    "@shopify/app-bridge": "^2.0.10",
-    "@shopify/app-bridge-react": "^2.0.10",
-    "@shopify/app-bridge-utils": "^2.0.10",
-    "@shopify/polaris": "^9.0.0",
-    "@shopify/shopify-api": "^2.1.0",
-    "apollo-boost": "^0.4.9",
-    "axios": "^0.25.0",
-    "axios": "^0.26.0",
+    "@apollo/client": "^3.5.10",
+    "@shopify/admin-graphql-api-utilities": "^1.0.9",
+    "@shopify/app-bridge": "^2.0.24",
+    "@shopify/app-bridge-react": "^2.0.24",
+    "@shopify/app-bridge-utils": "^2.0.24",
+    "@shopify/polaris": "^9.4.0",
+    "@shopify/shopify-api": "^3.0.1",
+    "axios": "^0.26.1",
     "axios-retry": "^3.2.4",
-    "graphql": "^16.2.0",
-    "ioredis": "^4.28.3",
     "graphql": "^16.3.0",
-    "ioredis": "^4.28.5",
-    "next": "12.x",
-    "react": "17.x",
-    "react-apollo": "^3.1.5",
-    "react-dom": "17.x"
+    "ioredis": "^5.0.4",
+    "next": "^12.1.5",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@types/ioredis": "^4.28.8"
+    "eslint": "8.13.0",
+    "eslint-config-next": "12.1.5",
+    "husky": "^7.0.4"
   }
 }

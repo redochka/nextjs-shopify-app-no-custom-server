@@ -2,7 +2,7 @@ import RedisStore from "@lib/redis";
 import Shopify from "@shopify/shopify-api";
 
 // noinspection JSUnusedGlobalSymbols
-export default async function (req, res) {
+export default async function check (req, res) {
 
   //the bearer header is not posted, we can not use this: loadCurrentSession because it will not find the session.
   // const session = await Shopify.Utils.loadCurrentSession(req, res, false); //false : offline

@@ -1,0 +1,29 @@
+version: "3.8"
+
+services:
+  redis:
+      image: redis:latest
+      command: ["redis-server", "--bind", "0.0.0.0", "--port", "6379", "--loglevel", "debug"]
+      ports:
+       - 6379:6379
+      volumes:
+        - redis:/data
+
+  nextjs:
+    depends_on:
+      - redis
+    ports:
+      - 3000:3000
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/usr/src/app
+      - /usr/src/app/node_modules
+      - /usr/src/app/.next
+    env_file:
+      - .env.development.local
+
+volumes:
+  redis:
+    driver: local

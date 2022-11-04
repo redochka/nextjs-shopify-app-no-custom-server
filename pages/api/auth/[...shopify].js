@@ -2,7 +2,7 @@ import Shopify, {ShopifyAuth} from '@lib/shopify';
 import registerMyWebhooks from "../webhooks/webhooks-registration";
 
 export default ShopifyAuth({
-  accessMode: 'offline',  //offline vs online
+  accessMode: 'online',  //offline vs online
   afterAuth: async (req, res, {accessToken, shop}) => {
 
     // Provide HOST_NAME here just in case it was not provided by env variable

@@ -18,7 +18,7 @@ const CustomLinkComponent = ({
     );
   }
   return (
-    <Link href={url}>
+    <Link passHref href={url}>
       <button {...rest}>{children}</button>
     </Link>
   );
